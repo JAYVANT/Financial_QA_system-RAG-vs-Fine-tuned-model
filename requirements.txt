@@ -1,0 +1,99 @@
+# ==========================================
+# Financial Q&A System - Requirements
+# ==========================================
+# Python Version: 3.8+
+# Date: January 2025
+# ==========================================
+
+# ===== Core Data Processing =====
+pandas==2.0.3
+numpy==1.24.3
+openpyxl==3.1.2  # For Excel file support
+
+# ===== PDF Processing =====
+PyPDF2==3.0.1
+pdfplumber==0.10.3
+pdfminer.six==20221105  # Dependency for pdfplumber
+
+# ===== HTML Processing =====
+beautifulsoup4==4.12.2
+lxml==4.9.3  # Parser for BeautifulSoup
+html5lib==1.1  # Alternative parser
+
+# ===== Machine Learning Core =====
+torch==2.1.0  # PyTorch - use torch==2.1.0+cu118 for CUDA 11.8
+torchaudio==2.1.0
+torchvision==0.16.0
+
+# ===== NLP Models and Transformers =====
+transformers==4.45.0
+sentence-transformers==3.0.1
+datasets==2.15.0  # For dataset handling
+tokenizers==0.15.0  # Fast tokenizers
+
+# ===== Vector Search and Retrieval =====
+faiss-cpu==1.8.0  # Use faiss-gpu for GPU support
+# For GPU: faiss-gpu==1.8.0
+
+# ===== Traditional ML and NLP =====
+scikit-learn==1.3.2
+scipy==1.11.4
+nltk==3.8.1
+
+# ===== Web Interface =====
+streamlit==1.29.0
+streamlit-chat==0.1.1  # For chat interface components
+
+# ===== Visualization =====
+plotly==5.18.0
+matplotlib==3.7.3
+seaborn==0.13.0
+
+# ===== API and Web =====
+requests==2.31.0
+urllib3==2.1.0
+aiohttp==3.9.1  # For async requests
+
+# ===== Utilities =====
+python-dotenv==1.0.0  # For environment variables
+tqdm==4.66.1  # Progress bars
+colorama==0.4.6  # Colored terminal output
+python-dateutil==2.8.2
+pytz==2023.3
+
+# ===== File Handling =====
+chardet==5.2.0  # Character encoding detection
+python-magic==0.4.27  # File type detection
+pypdf==3.17.4  # Alternative PDF handler
+
+# ===== Logging and Monitoring =====
+loguru==0.7.2  # Advanced logging
+wandb==0.16.1  # Optional: For experiment tracking
+
+# ===== Testing (Optional - for development) =====
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-asyncio==0.21.1
+
+# ===== Code Quality (Optional - for development) =====
+black==23.12.0
+flake8==6.1.0
+mypy==1.7.1
+pylint==3.0.3
+
+# ===== Performance Optimization =====
+numba==0.58.1  # JIT compilation for numerical computations
+accelerate==0.25.0  # Hugging Face Accelerate for distributed training
+
+# ===== Database Support (Optional) =====
+sqlalchemy==2.0.23  # For database connections
+psycopg2-binary==2.9.9  # PostgreSQL adapter
+pymongo==4.6.1  # MongoDB adapter
+
+# ===== Additional NLP Tools =====
+spacy==3.7.2  # Alternative NLP library
+# Run after installation: python -m spacy download en_core_web_sm
+
+# ===== Cross-Encoder Support =====
+rank-bm25==0.2.2  # BM25 implementation
+elasticsearch==8.11.0  # Optional: For production-scale search
